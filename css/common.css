@@ -16,7 +16,7 @@ header #top_nav ul li, #top_nav ul h1 { display: inline-block; line-height: 100p
 header #top_nav ul h1 { font-size: 40px; font-weight: 300; margin-left: 60px; padding-right: 201px; font-family: 'KyoboHandwriting2020A'; color: #575787; } 
 header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; padding-right: 141px; color: #6A6A7D; } 
 
-#section0 #main_intro { width: 1920px; height: 980px; position: relative; margin: 0 auto; text-align: center;}
+#section0 #main_intro { max-width: 1920px; min-width: 1720px;height: 980px; position: relative; margin: 0 auto; text-align: center;}
 #section0 #main_intro .intro_2section { width: 760px; height: 980px; position: relative; margin: 0 auto; /* border: 1px solid red; */ display: inline-block; float: left; text-align: center; color: #707070; } 
 #section0 #main_intro #intro_section1 {margin-left: 200px;}
 #section0 #main_intro #intro_section1 ul #main_title { margin-top: 300px; font-size: 160px; height: 160px; font-family: 'KyoboHandwriting2020A'; color: #575787; } 
@@ -41,16 +41,16 @@ header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-wei
 #name_section #title_description li .hanja_section #first_hanja { position: relative; left: -100px; } 
 #name_section #title_description li .hanja_section #second_hanja { position: relative; left: -100px; } 
 
-#img3_section { position: relative; max-width: 1920px; min-width: 1520px; height: 1400px; font-family: 'NanumSquare'; margin: 0 auto; } 
-#img3_section #intro_img1 { position: absolute; top: 190px; left: 190px; } 
-#img3_section #intro_img2 { position: absolute; top: 190px; left: 550px; } 
-#img3_section #intro_img3 { position: absolute; top: 190px; right: 190px; } 
-#img3_section #intro_text_wrap { position: absolute; top: 1150px; width: 1920px; } 
-#img3_section #intro_text_wrap div { font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; margin: 0 auto; line-height: 47px; text-align: center; letter-spacing: 0.05em; color: #6A6A7D; } 
+#img3_section { position: relative; max-width: 1920px; min-width: 1520px; height: 1300px; font-family: 'NanumSquare'; margin: 0 auto; } 
+#img3_section #intro_img1 { position: absolute; top: 255px; left: 285px; } 
+#img3_section #intro_img2 { position: absolute; top: 225px; left: 685px; } 
+#img3_section #intro_img3 { position: absolute; top: 195px; right: 225px; } 
+#img3_section #intro_text_wrap { position: absolute; bottom: 190px;; left: 468px; max-width: 1920px; } 
+#img3_section #intro_text_wrap div { font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 36px; margin: 0 auto; line-height: 58px; text-align: center; letter-spacing: 0.05em; color: #6A6A7D; } 
 
-#function_section { position: relative; max-width: 1920px; min-width: 1520px; height: 1400px; font-family: 'NanumSquare'; margin: 0 auto; } 
-#function_section img { position: absolute; left: 244px; top: 200px; } 
-#function_section dl { position: absolute; left: 1083px; top: 350px; } 
+#function_section { position: relative; max-width: 1920px; min-width: 1520px; height: 2000px; font-family: 'NanumSquare'; margin: 0 auto; } 
+#function_section img { position: absolute; left: 244px; top: 332px; } 
+#function_section dl { position: absolute; left: 1083px; top: 525px; } 
 #function_section dl dt { font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 45px; letter-spacing: 0.05em; color: #7777A8; margin-bottom: 20px; } 
 #function_section dl dd { font-family: 'NanumSquare'; font-style: normal; font-weight: 400; font-size: 22px; line-height: 35px; letter-spacing: 0.08em; color: #6A6A7D; margin-bottom: 92px; visibility: hidden; opacity: 0; transition: opacity .5s ease; } 
 #function_section .hidden_img { visibility: hidden; opacity: 0; transition: opacity .5s ease; } 
@@ -102,4 +102,12 @@ header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-wei
 /* #ex_img1 { position: relative; width: 1152px; height: 650px; margin: 0 auto 20px auto; background-color: aquamarine; text-align: center; } 
 #ex_img2 { width: 662px; height: 170px; margin: 0 auto 146px auto; background-color: aquamarine; } */
 
-footer { height: 360px; background-color: black; color: #fff; } 
+footer { position: relative; height: 300px; background-color: #7777A8; color: #fff; }
+footer #footer_wrap{position: relative; max-width: 1920px; min-width: 1520px; height: 300px; margin: 0 auto; font-family: 'NanumSquare'; font-style: normal;}
+footer #footer_wrap #person1{ position: absolute; top: 70px; left: 100px;}
+footer #footer_wrap #person2{ position: absolute; top: 70px; left: 438px;}
+footer #footer_wrap #person3{ position: absolute; top: 70px; left: 776px;}
+footer #footer_wrap .letme li{position: relative; top: 0; left: 0; font-weight: 400; font-size: 16px; line-height: 36px; margin-bottom: 0px;}
+footer #footer_wrap .letme li:first-child{position: relative; top: 0; left: 0; font-weight: 700; font-size: 32px; line-height: 36px;margin-bottom: 20px;}
+footer #footer_wrap #footer_logo{position: absolute; top: 70px; right: 200px; font-weight: 400; font-size: 64px; color: #EFF1F5; font-family: 'KyoboHandwriting2020A';}
+footer #footer_wrap #school{position: absolute; bottom: 66px; right: 200px; font-weight: 400; font-size: 20px; text-align: right; line-height: 30px;}
