@@ -4,8 +4,8 @@ window.addEventListener('scroll', function() {
     if ( checkVisible($('#sec7_null')) && !isVisible) {
         // alert("엘리먼트 보임 !!");
         isVisible=true;
-        document.querySelector("#color2").style.left = "810px";
-        document.querySelector("#color3").style.left = "1240px";
+        document.querySelector("#color2").style.left = "430px";
+        document.querySelector("#color3").style.left = "860px";
         document.querySelector("#color_code1").style.opacity = "1";
         document.querySelector("#color_code2").style.opacity = "1";
         document.querySelector("#color_code3").style.opacity = "1";

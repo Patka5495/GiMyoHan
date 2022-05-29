@@ -1,10 +1,12 @@
 @import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
 @font-face { font-family: 'KyoboHandwriting2020A'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff'); font-weight: normal; font-style: normal; } 
-* { margin: 0; padding: 0; box-sizing: border-box; list-style: none; /* font-family: 'Noto Sans KR' */ }
+* { margin: 0; padding: 0; box-sizing: border-box; list-style: none; /* font-family: 'Noto Sans KR' */  }
 body { background-color: #eff1f6; } 
 .blind { display: none; } 
-a:link, a:hover, a:visited, a:active { text-decoration: none; color: #000; } 
-header #top_nav { height: 100px; background-image: url("../img/nav_back.png"); background-size: cover; /* border-bottom: 1px solid #000; */ box-shadow: 0px 2px 5px 1px rgba(131, 131, 131, 0.475); }
+.clear { clear: both;}
+a:link, a:hover, a:visited, a:active { text-decoration: none; color: #6A6A7D; }
+a:hover{cursor: pointer;}
+header #top_nav { width: 100%; position: fixed; z-index: 5; height: 100px; background-image: url("../img/nav_back.png"); background-size: cover; box-shadow: 0px 2px 5px 1px rgba(131, 131, 131, 0.475);}
 /* box-shadow: [h-offset] [v-offset] [blur] [spread] [color] (inset); h-offset: 그림자의 좌우 위치 설정 
  v-offset: 그림자의 상하 위치 설정
  blur: 그림자의 흐려짐 정도의 범위
@@ -13,23 +15,25 @@ header #top_nav { height: 100px; background-image: url("../img/nav_back.png"); b
  inset: (optional) 요소 내부에 그림자 표현, 기본적으로 그림자는 요소 외부에 위치 */
 header #top_nav ul { max-width: 1920px; min-width: 1520px; height: 100px; /* position: relative; */ margin: 0 auto; /* display: flex; align-items: center; */}
 header #top_nav ul li, #top_nav ul h1 { display: inline-block; line-height: 100px; } 
-header #top_nav ul h1 { font-size: 40px; font-weight: 300; margin-left: 60px; padding-right: 201px; font-family: 'KyoboHandwriting2020A'; color: #575787; } 
-header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; padding-right: 141px; color: #6A6A7D; } 
+header #top_nav ul h1 { font-size: 40px; font-weight: 300; margin-left: 3vw; padding-right: 10vw; font-family: 'KyoboHandwriting2020A'; color: #575787; } 
+header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; padding-right: 7vw; color: #6A6A7D; } 
 
-#section0 #main_intro { max-width: 1920px; min-width: 1720px;height: 980px; position: relative; margin: 0 auto; text-align: center;}
-#section0 #main_intro .intro_2section { width: 760px; height: 980px; position: relative; margin: 0 auto; /* border: 1px solid red; */ display: inline-block; float: left; text-align: center; color: #707070; } 
-#section0 #main_intro #intro_section1 {margin-left: 200px;}
-#section0 #main_intro #intro_section1 ul #main_title { margin-top: 300px; font-size: 160px; height: 160px; font-family: 'KyoboHandwriting2020A'; color: #575787; } 
-#section0 #main_intro #intro_section1 ul #sub_title { margin-top: 66px; font-size: 48px; /* margin-bottom: 19px; */ font-family: 'KyoboHandwriting2020A'; color: #6A6A7D; } 
+#section0 #main_intro { max-width: 1920px; height: 1080px; position: relative; margin: 0 auto; padding-top: 100px; text-align: center;}
+#section0 #main_intro #two_section_wrap { max-width: 1520px; min-width: 1350px; height: 980px; margin: auto; }
+#section0 #main_intro #two_section_wrap #intro_section2 { width: 760px; height: 980px; position: relative; margin: 0 auto;  display: inline-block; float: right; text-align: center; color: #707070; } 
+#section0 #main_intro #two_section_wrap #intro_section1 { height: 980px; position: relative; margin: 0 auto; display: inline-block; float: left; text-align: center; color: #707070;}
+#section0 #main_intro #two_section_wrap #intro_section1 ul{margin: auto;}
+#section0 #main_intro #two_section_wrap #intro_section1 ul #main_title { margin-top: 300px; font-size: 160px; height: 160px; font-family: 'KyoboHandwriting2020A'; color: #575787; } 
+#section0 #main_intro #two_section_wrap #intro_section1 ul #sub_title { width: 500px; margin: 66px auto 0 auto; font-size: 48px;  font-family: 'KyoboHandwriting2020A'; color: #6A6A7D; } 
 /* #section0 #main_intro .main_intro1 ul #sub_description { font-size: 20px; line-height: 40px; }  */
-#section0 #main_intro #intro_section2 #image_show { position: relative; overflow: hidden; margin: 110px 0; width: 760px; height: 760px; } 
-#section0 #main_intro #intro_section2 #image_show::after { position: absolute; /* display: block; */ content: ""; top: 0; left: -50px; width: 860px; height: 100%; box-shadow: inset 0px 0px 10px 20px #eff1f6 /*배경과 같은 색*/; } 
-#section0 #main_intro #intro_section2 #phone { position: absolute; top: 17%; left: 29%; width: 310px; z-index: 3; filter: drop-shadow( 0px 5px 5px rgba(0, 0, 0, 0.499)); } 
-#section0 #main_intro #intro_section2 #image_show .tri_images { position: absolute; line-height: 0%; } 
-#section0 #main_intro #intro_section2 #image_show .tri_images ul .random_image { width: 253px; height: 253px; display: inline-block; float: left; }
-#section0 #main_intro #intro_section2 #image_show .tri_images ul .random_image img { width: 253px; height: 253px; } 
+#section0 #main_intro #two_section_wrap #intro_section2 #image_show { position: relative; overflow: hidden; margin: 110px 0; width: 760px; height: 760px; } 
+#section0 #main_intro #two_section_wrap #intro_section2 #image_show::after { position: absolute; display: block; content: ""; top: 0; left: -50px; width: 860px; height: 100%; box-shadow: inset 0px 0px 10px 20px #eff1f6; } 
+#section0 #main_intro #two_section_wrap #intro_section2 #phone { position: absolute; top: 17%; left: 29%; width: 310px; z-index: 3; filter: drop-shadow( 0px 5px 5px rgba(0, 0, 0, 0.499)); } 
+#section0 #main_intro #two_section_wrap #intro_section2 #image_show .tri_images { position: absolute; line-height: 0%; } 
+#section0 #main_intro #two_section_wrap #intro_section2 #image_show .tri_images ul .random_image { width: 253px; height: 253px; display: inline-block; float: left; }
+#section0 #main_intro #two_section_wrap #intro_section2 #image_show .tri_images ul .random_image img { width: 253px; height: 253px; } 
 
-#name_section { height: 943px; background-color: #7777A8; position: relative; text-align: center; padding-top: 200px;}
+#name_section {width: 100%; height: 943px; background-color: #7777A8; background-repeat: repeat; position: relative; text-align: center; padding-top: 200px;}
 #name_section h2 { position: relative; min-width: 800px; display: inline-block; font-family: 'KyoboHandwriting2020A'; font-style: normal; font-weight: 400; font-size: 128px; height: 128px; color: #EFF1F5; } 
 #name_section div { position: relative; min-width: 800px; top: 150px; text-align: center; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 50px; text-align: center; letter-spacing: 0.05em;color: #EFF1F5; } 
 #name_section #title_description {min-width: 800px; margin-top: 75px; } 
@@ -41,12 +45,13 @@ header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-wei
 #name_section #title_description li .hanja_section #first_hanja { position: relative; left: -100px; } 
 #name_section #title_description li .hanja_section #second_hanja { position: relative; left: -100px; } 
 
-#img3_section { position: relative; max-width: 1920px; min-width: 1520px; height: 1300px; font-family: 'NanumSquare'; margin: 0 auto; } 
-#img3_section #intro_img1 { position: absolute; top: 255px; left: 285px; } 
-#img3_section #intro_img2 { position: absolute; top: 225px; left: 685px; } 
-#img3_section #intro_img3 { position: absolute; top: 195px; right: 225px; } 
-#img3_section #intro_text_wrap { position: absolute; bottom: 190px;; left: 468px; max-width: 1920px; } 
-#img3_section #intro_text_wrap div { font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 36px; margin: 0 auto; line-height: 58px; text-align: center; letter-spacing: 0.05em; color: #6A6A7D; } 
+#img3_section { position: relative; max-width: 1410px; height: 1300px; font-family: 'NanumSquare'; margin: 0 auto; } 
+#img3_section #img3_wrap {position: relative; top: 255px; height: 620px;}
+#img3_section #intro_img1 { position: absolute; top: 60px; left: 0; } 
+#img3_section #intro_img2 { position: absolute; top: 30px; left: 400px; } 
+#img3_section #intro_img3 { position: absolute;  left: 800px; } 
+#img3_section #intro_text_wrap { position: relative; top: 405px; } 
+#img3_section #intro_text_wrap div { font-family: 'NanumSquare'; font-style: normal; min-width: 1000px; font-weight: 700; font-size: 36px; margin: 0 auto; line-height: 58px; text-align: center; letter-spacing: 0.05em; color: #6A6A7D; } 
 
 #function_section { position: relative; max-width: 1920px; min-width: 1520px; height: 2000px; font-family: 'NanumSquare'; margin: 0 auto; } 
 #function_section img { position: absolute; left: 244px; top: 332px; } 
@@ -56,41 +61,44 @@ header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-wei
 #function_section .hidden_img { visibility: hidden; opacity: 0; transition: opacity .5s ease; } 
 
 /* 타이틀 클래스 */
-.sec_title { position: relative; text-align: left; margin: 0; top: 200px; left: 200px; width: 178px; height: 41px; font-style: normal; font-weight: 800; font-size: 36px; letter-spacing: 0.02em; color: #575787; } 
+.sec_title { position: relative; margin-right: calc(100vw-178px); top: 200px;; width: 178px; height: 41px; font-style: normal; font-weight: 800; font-size: 36px; letter-spacing: 0.02em; color: #575787; } 
 
-#concept_section { position: relative; max-width: 1920px; min-width: 1520px; height: 1157px; text-align: center; font-family: 'NanumSquare'; margin: 0 auto; } 
-#concept_section #design_sec { position: relative; top: 400px; } 
-#concept_section #design_sec .design_circle { display: inline-block; width: 301px; height: 301px; font-size: 24px; font-weight: 700; line-height: 301px; color: #EFF1F5; background-image: url("../img/design_circle.png"); border-radius: 100%; margin-right: 129px; } 
+#concept_section { position: relative; max-width: 1520px; height: 1157px; text-align: center; font-family: 'NanumSquare'; margin: 0 auto; } 
+#concept_section #design_sec { position: relative; top: 400px; max-width: 1180px; min-width: 903px; margin: auto; } 
+#concept_section #design_sec .design_circle { display: inline-block; width: 301px; height: 301px; font-size: 24px; font-weight: 700; line-height: 301px; color: #EFF1F5; background-image: url("../img/design_circle.png"); border-radius: 100%; margin-right: calc((100% - 915px)/2); } 
 #concept_section #design_sec .design_circle:last-child { margin-right: 0; } 
-#concept_section div { position: relative; top: 588px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; text-align: center; letter-spacing: 0.05em; color: #575787; } 
+#concept_section div { position: relative; min-width: 903px; top: 638px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; text-align: center; letter-spacing: 0.05em; color: #575787; } 
 
-#font_logo_section { position: relative; max-width: 1920px; min-width: 1520px; height: 729px; font-family: 'NanumSquare'; margin: 0 auto; } 
-#font_logo_section #font_logo_title { font-family: 'KyoboHandwriting2020A'; position: absolute; top: 217px; left: 530px; height: 160px; font-style: normal; font-weight: 400; font-size: 160px; line-height: 100%; color: #575787; } 
-#font_logo_section #font_logo_description { position: absolute; top: 460px; left: 530px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 45px; letter-spacing: 0.04em; color: #9EA1B7; } 
+#font_logo_section { position: relative; max-width: 1520px; min-width: 800px;  height: 729px; font-family: 'NanumSquare'; margin: 0 auto; } 
+#font_logo_section #font_logo_title { width: 384px; font-family: 'KyoboHandwriting2020A'; position: relative; top: 217px; margin-left: calc(47% - 384px); height: 160px; font-style: normal; font-weight: 400; font-size: 160px; line-height: 100%; color: #575787; } 
+#font_logo_section #font_logo_description { position: relative; min-width: 1000px; top: 270px; margin-left: calc(47% - 375px); font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 45px; letter-spacing: 0.04em; color: #9EA1B7; } 
 
-#main_logo_section { position: relative; max-width: 1920px; min-width: 1520px; height: 1080px; font-family: 'NanumSquare'; margin: 0 auto; } 
-#main_logo_section img:first-of-type { position: absolute; top: 200px; left: 530px; } 
-#main_logo_section img:last-of-type { position: absolute; top: 200px; left: 1140px; } 
-#main_logo_description { position: absolute; top: 821px; left: 530px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 45px; letter-spacing: 0.04em; color: #9EA1B7; } 
+#main_logo_section { position: relative; max-width: 1520px; min-width: 800px; height: 1080px; font-family: 'NanumSquare'; margin: 0 auto; } 
+#main_logo_section #logo_wrap { position: relative; top: 200px; max-width: 1100px; min-width: 1000px; height: 520px; margin-left: calc(47% - 375px);}
+#main_logo_section #logo_wrap img:first-of-type {margin-right: calc(100% - 1005px);} 
+/* #main_logo_section #logo_wrap img:last-of-type { position: absolute;}  */
+#main_logo_section #main_logo_description { position: relative; min-width: 1000px; top: 300px; margin-left: calc(47% - 375px); font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 45px; letter-spacing: 0.04em; color: #9EA1B7; } 
 
-#font_section { position: relative; max-width: 1920px; min-width: 1520px; height: 969px; font-family: 'NanumSquare'; margin: 0 auto; } 
-#font_section #font_description { position: absolute; top: 700px; left: 530px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 45px; letter-spacing: 0.04em; color: #9EA1B7; } 
-#font_section #nanum_title { position: absolute; top: 200px; left: 530px; font-family: 'NanumSquare'; font-style: normal; font-weight: 800; font-size: 48px; line-height: 54px; letter-spacing: 0.02em; color: #575787; } 
-#font_section #nanum_description { position: absolute; top: 302px; left: 530px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 36px; line-height: 41px; letter-spacing: 0.3em; color: rgba(87, 87, 135, 0.5); } 
-#font_section #kyobo_title { position: absolute; top: 443px; left: 530px; font-family: 'KyoboHandwriting2020A'; font-style: normal; font-weight: 400; font-size: 48px; line-height: 61px; letter-spacing: 0.02em; color: #575787; } 
-#font_section #kyobo_description { position: absolute; top: 554px; left: 530px; font-family: 'KyoboHandwriting2020A'; font-style: normal; font-size: 36px; line-height: 46px; letter-spacing: 0.3em; color: rgba(87, 87, 135, 0.5); } 
+#font_section { position: relative; max-width: 1520px; min-width: 800px; height: 969px; font-family: 'NanumSquare'; margin: 0 auto; } 
+#font_section #font_wrap { position: relative; top: 200px; max-width: 1100px; height: 769px;  margin-left: calc(47% - 375px);}
+#font_section #font_wrap #nanum_title { font-family: 'NanumSquare'; margin-bottom: 48px; font-style: normal; font-weight: 800; font-size: 48px; line-height: 54px; letter-spacing: 0.02em; color: #575787; } 
+#font_section #font_wrap #nanum_description { font-family: 'NanumSquare'; margin-bottom: 100px; font-style: normal; font-weight: 700; font-size: 36px; line-height: 41px; letter-spacing: 0.3em; color: rgba(87, 87, 135, 0.5); } 
+#font_section #font_wrap #kyobo_title { font-family: 'KyoboHandwriting2020A'; margin-bottom: 50px; font-style: normal; font-weight: 400; font-size: 48px; line-height: 61px; letter-spacing: 0.02em; color: #575787; } 
+#font_section #font_wrap #kyobo_description { font-family: 'KyoboHandwriting2020A'; margin-bottom: 100px; font-style: normal; font-size: 36px; line-height: 46px; letter-spacing: 0.3em; color: rgba(87, 87, 135, 0.5); } 
+#font_section #font_wrap #font_description { font-family: 'NanumSquare';  font-style: normal; font-weight: 700; font-size: 24px; line-height: 45px; letter-spacing: 0.04em; color: #9EA1B7; } 
 
-#icon_section { position: relative; max-width: 1920px; min-width: 1520px; height: 880px; font-family: 'NanumSquare'; margin: 0 auto; } 
-#icon_section #icons { position: absolute; top: 200px; left: 530px; } 
+#icon_section { position: relative; max-width: 1520px; min-width: 800px; height: 880px; font-family: 'NanumSquare'; margin: 0 auto; } 
+#icon_section #icons { position: relative;max-width: 1000px; top: 200px; margin-left: calc(47% - 375px);} 
 #icon_section #icons img { margin: 5px; } 
 
-#color_section { position: relative; max-width: 1920px; min-width: 1520px; height: 777px; font-family: 'NanumSquare'; margin: 0 auto; } 
-#color_section article img:first-child { position: absolute; top: 200px; left: 380px; /* left: 810px; */ transition: all .5s ease-in-out; z-index: 3; } 
-#color_section article img:nth-child(3) { position: absolute; top: 200px; left: 380px; /* left: 810px; */ transition: all .7s ease; z-index: 2; } 
-#color_section article img:nth-child(5) { position: absolute; top: 200px; left: 380px; /* left: 1240px; */ transition: all 1s ease; z-index: 1; } 
-#color_section article div:nth-child(2) { position: absolute; top: 550px; left: 475px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; letter-spacing: 0.04em; color: #4C4C79; opacity: 0; transition: all 1s ease; } 
-#color_section article div:nth-child(4) { position: absolute; top: 550px; left: 905px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; letter-spacing: 0.04em; color: #7777A8; opacity: 0; transition: all 1s ease; } 
-#color_section article div:nth-child(6) { position: absolute; top: 550px; left: 1334px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; letter-spacing: 0.04em; color: #9EA1B7; opacity: 0; transition: all .1s ease; } 
+#color_section { position: relative; max-width: 1520px; min-width: 1160px; height: 777px; font-family: 'NanumSquare'; margin: 0 auto; } 
+#color_section article { position: relative; min-width: 1160px; height: 577px; top: 200px; margin-left: calc(50% - 580px);}
+#color_section article img:first-child { position: absolute; left: 0px; /* left: 810px; */ transition: all .5s ease-in-out; z-index: 3; } 
+#color_section article img:nth-child(3) { position: absolute; left: 0px; /* left: 810px; */ transition: all .7s ease; z-index: 2; } 
+#color_section article img:nth-child(5) { position: absolute; left: 0px; /* left: 1240px; */ transition: all 1s ease; z-index: 1; } 
+#color_section article div:nth-child(2) { position: absolute; top: 350px; left: 95px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; letter-spacing: 0.04em; color: #4C4C79; opacity: 0; transition: all 1s ease; } 
+#color_section article div:nth-child(4) { position: absolute; top: 350px; left: 525px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; letter-spacing: 0.04em; color: #7777A8; opacity: 0; transition: all 1s ease; } 
+#color_section article div:nth-child(6) { position: absolute; top: 350px; left: 955px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; letter-spacing: 0.04em; color: #9EA1B7; opacity: 0; transition: all 1s ease; } 
 #color_section article #sec7_null { position: absolute; top: 400px; } 
 
 #video_section { position: relative; height: 3022px; background-color: #7777A8; background-size: cover; text-align: center; margin: 0 auto; } 
@@ -103,11 +111,11 @@ header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-wei
 #ex_img2 { width: 662px; height: 170px; margin: 0 auto 146px auto; background-color: aquamarine; } */
 
 footer { position: relative; height: 300px; background-color: #7777A8; color: #fff; }
-footer #footer_wrap{position: relative; max-width: 1920px; min-width: 1520px; height: 300px; margin: 0 auto; font-family: 'NanumSquare'; font-style: normal;}
-footer #footer_wrap #person1{ position: absolute; top: 70px; left: 100px;}
-footer #footer_wrap #person2{ position: absolute; top: 70px; left: 438px;}
-footer #footer_wrap #person3{ position: absolute; top: 70px; left: 776px;}
-footer #footer_wrap .letme li{position: relative; top: 0; left: 0; font-weight: 400; font-size: 16px; line-height: 36px; margin-bottom: 0px;}
-footer #footer_wrap .letme li:first-child{position: relative; top: 0; left: 0; font-weight: 700; font-size: 32px; line-height: 36px;margin-bottom: 20px;}
-footer #footer_wrap #footer_logo{position: absolute; top: 70px; right: 200px; font-weight: 400; font-size: 64px; color: #EFF1F5; font-family: 'KyoboHandwriting2020A';}
-footer #footer_wrap #school{position: absolute; bottom: 66px; right: 200px; font-weight: 400; font-size: 20px; text-align: right; line-height: 30px;}
+footer #footer_wrap{ position: relative; max-width: 1920px; min-width: 1520px; height: 300px; margin: 0 auto; font-family: 'NanumSquare'; font-style: normal;}
+footer #footer_wrap #person1{ position: relative; top: 70px; display: inline-block; margin-left: calc(25% - 380px);}
+footer #footer_wrap #person2{ position: relative; top: 70px; display: inline-block; margin-left: calc(30% - 456px);}
+footer #footer_wrap #person3{ position: relative; top: 70px; display: inline-block; margin-left: calc(43% - 655px);}
+footer #footer_wrap .letme li{font-weight: 400; font-size: 16px; line-height: 36px; margin-bottom: 0px;}
+footer #footer_wrap .letme li:first-child{ position: relative; left: 0; font-weight: 700; font-size: 32px; line-height: 36px; margin-bottom: 30px;}
+footer #footer_wrap #footer_logo{ position: relative; top: -104px; right: 0px; margin-right: calc(50% - 760px); font-weight: 400; font-size: 64px; color: #EFF1F5; text-align: right; font-family: 'KyoboHandwriting2020A';}
+footer #footer_wrap #school{ position: relative; bottom: 66px; right: 0px; margin-right: calc(50% - 760px); font-weight: 400; font-size: 20px; text-align: right; line-height: 30px;}
