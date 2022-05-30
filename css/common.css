@@ -6,17 +6,22 @@ body { background-color: #eff1f6; }
 .clear { clear: both;}
 a:link, a:hover, a:visited, a:active { text-decoration: none; color: #6A6A7D; }
 a:hover{cursor: pointer;}
-header #top_nav { width: 100%; position: fixed; z-index: 5; height: 100px; background-image: url("../img/nav_back.png"); background-size: cover; box-shadow: 0px 2px 5px 1px rgba(131, 131, 131, 0.475);}
+
+header #top_nav { width: 100%; position: fixed; z-index: 5; height: 100px; background-image: url("../img/nav_back.png"); background-size: cover; /*box-shadow: 0px 2px 5px 1px rgba(131, 131, 131, 0.475);*/}
 /* box-shadow: [h-offset] [v-offset] [blur] [spread] [color] (inset); h-offset: 그림자의 좌우 위치 설정 
  v-offset: 그림자의 상하 위치 설정
  blur: 그림자의 흐려짐 정도의 범위
  spread: 그림자의 크기
  color: 그림자 색상
  inset: (optional) 요소 내부에 그림자 표현, 기본적으로 그림자는 요소 외부에 위치 */
-header #top_nav ul { max-width: 1920px; min-width: 1520px; height: 100px; /* position: relative; */ margin: 0 auto; /* display: flex; align-items: center; */}
+header #top_nav ul { max-width: 1920px; min-width: 960px; height: 100px; /* position: relative; */ margin: 0 auto; /* display: flex; align-items: center; */}
 header #top_nav ul li, #top_nav ul h1 { display: inline-block; line-height: 100px; } 
-header #top_nav ul h1 { font-size: 40px; font-weight: 300; margin-left: 3vw; padding-right: 10vw; font-family: 'KyoboHandwriting2020A'; color: #575787; } 
-header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; padding-right: 7vw; color: #6A6A7D; } 
+header #top_nav ul h1 { font-size: 40px; font-weight: 300; margin-left: calc(6.25% - 60px); margin-right: calc(14.6% - 80px); font-family: 'KyoboHandwriting2020A'; color: #575787; } 
+header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; margin-right: calc(11.5% - 80px); color: #6A6A7D; } 
+
+header #top_button {  width: 4.8vh; position: fixed; bottom: 4.8%; right: 3.8%; z-index: 3; opacity: 0; transition: all 0.5s ease;}
+header #top_button:hover{ cursor: pointer;}
+header #top_button img { width: 4.8vh;}
 
 #section0 #main_intro { max-width: 1920px; height: 1080px; position: relative; margin: 0 auto; padding-top: 100px; text-align: center;}
 #section0 #main_intro #two_section_wrap { max-width: 1520px; min-width: 1350px; height: 980px; margin: auto; }
@@ -88,14 +93,14 @@ header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-wei
 #font_section #font_wrap #font_description { font-family: 'NanumSquare';  font-style: normal; font-weight: 700; font-size: 24px; line-height: 45px; letter-spacing: 0.04em; color: #9EA1B7; } 
 
 #icon_section { position: relative; max-width: 1520px; min-width: 800px; height: 880px; font-family: 'NanumSquare'; margin: 0 auto; } 
-#icon_section #icons { position: relative;max-width: 1000px; top: 200px; margin-left: calc(47% - 375px);} 
-#icon_section #icons img { margin: 5px; } 
+#icon_section #icons { position: relative; max-width: 1000px; top: 200px; margin-left: calc(47% - 375px);} 
+#icon_section #icons img { margin: 5px; width: 140px;} 
 
 #color_section { position: relative; max-width: 1520px; min-width: 1160px; height: 777px; font-family: 'NanumSquare'; margin: 0 auto; } 
 #color_section article { position: relative; min-width: 1160px; height: 577px; top: 200px; margin-left: calc(50% - 580px);}
-#color_section article img:first-child { position: absolute; left: 0px; /* left: 810px; */ transition: all .5s ease-in-out; z-index: 3; } 
-#color_section article img:nth-child(3) { position: absolute; left: 0px; /* left: 810px; */ transition: all .7s ease; z-index: 2; } 
-#color_section article img:nth-child(5) { position: absolute; left: 0px; /* left: 1240px; */ transition: all 1s ease; z-index: 1; } 
+#color_section article img:first-child { position: absolute; width: 301px; left: 0px; /* left: 810px; */ transition: all .5s ease-in-out; z-index: 3; } 
+#color_section article img:nth-child(3) { position: absolute; width: 301px; left: 0px; /* left: 810px; */ transition: all .7s ease; z-index: 2; } 
+#color_section article img:nth-child(5) { position: absolute; width: 301px; left: 0px; /* left: 1240px; */ transition: all 1s ease; z-index: 1; } 
 #color_section article div:nth-child(2) { position: absolute; top: 350px; left: 95px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; letter-spacing: 0.04em; color: #4C4C79; opacity: 0; transition: all 1s ease; } 
 #color_section article div:nth-child(4) { position: absolute; top: 350px; left: 525px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; letter-spacing: 0.04em; color: #7777A8; opacity: 0; transition: all 1s ease; } 
 #color_section article div:nth-child(6) { position: absolute; top: 350px; left: 955px; font-family: 'NanumSquare'; font-style: normal; font-weight: 700; font-size: 24px; line-height: 27px; letter-spacing: 0.04em; color: #9EA1B7; opacity: 0; transition: all 1s ease; } 
@@ -111,11 +116,11 @@ header #top_nav ul li { font-family: 'NanumSquare'; font-style: normal; font-wei
 #ex_img2 { width: 662px; height: 170px; margin: 0 auto 146px auto; background-color: aquamarine; } */
 
 footer { position: relative; height: 300px; background-color: #7777A8; color: #fff; }
-footer #footer_wrap{ position: relative; max-width: 1920px; min-width: 1520px; height: 300px; margin: 0 auto; font-family: 'NanumSquare'; font-style: normal;}
-footer #footer_wrap #person1{ position: relative; top: 70px; display: inline-block; margin-left: calc(25% - 380px);}
-footer #footer_wrap #person2{ position: relative; top: 70px; display: inline-block; margin-left: calc(30% - 456px);}
-footer #footer_wrap #person3{ position: relative; top: 70px; display: inline-block; margin-left: calc(43% - 655px);}
+footer #footer_wrap{ position: relative; max-width: 1920px; min-width: 960px; height: 300px; margin: 0 auto; font-family: 'NanumSquare'; font-style: normal;}
+footer #footer_wrap #person1{ position: relative; top: 70px; display: inline-block; margin-left: calc(10.4% - 100px);}
+footer #footer_wrap #person2{ position: relative; top: 70px; display: inline-block; margin-left: calc(11.5% - 100px);}
+footer #footer_wrap #person3{ position: relative; top: 70px; display: inline-block; margin-left: calc(16.7% - 150px);}
 footer #footer_wrap .letme li{font-weight: 400; font-size: 16px; line-height: 36px; margin-bottom: 0px;}
 footer #footer_wrap .letme li:first-child{ position: relative; left: 0; font-weight: 700; font-size: 32px; line-height: 36px; margin-bottom: 30px;}
-footer #footer_wrap #footer_logo{ position: relative; top: -104px; right: 0px; margin-right: calc(50% - 760px); font-weight: 400; font-size: 64px; color: #EFF1F5; text-align: right; font-family: 'KyoboHandwriting2020A';}
-footer #footer_wrap #school{ position: relative; bottom: 66px; right: 0px; margin-right: calc(50% - 760px); font-weight: 400; font-size: 20px; text-align: right; line-height: 30px;}
+footer #footer_wrap #footer_logo{ position: relative; top: -104px; right: 0px; margin-right: calc(20.8% - 200px); font-weight: 400; font-size: 64px; color: #EFF1F5; text-align: right; font-family: 'KyoboHandwriting2020A';}
+footer #footer_wrap #school{ position: relative; bottom: 66px; right: 0px; margin-right: calc(20.8% - 200px); font-weight: 400; font-size: 20px; text-align: right; line-height: 30px;}
