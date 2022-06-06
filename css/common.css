@@ -22,10 +22,11 @@ header #top_button img { width: 4.8vh; }
 #section0 #main_intro #two_section_wrap #intro_section1 { height: 980px; position: relative; margin: 0 auto; display: inline-block; float: left; text-align: center; color: #707070; } 
 #section0 #main_intro #two_section_wrap #intro_section1 ul { margin: auto; } 
 #section0 #main_intro #two_section_wrap #intro_section1 ul #main_title { margin-top: 300px; font-size: 160px; height: 160px; font-family: 'KyoboHandwriting2020A'; color: #575787; } 
+#section0 #main_intro #two_section_wrap #intro_section1 ul #main_title #myo { color: #7777A8;}
 #section0 #main_intro #two_section_wrap #intro_section1 ul #sub_title { width: 500px; margin: 66px auto 0 auto; font-size: 48px; font-family: 'KyoboHandwriting2020A'; color: #6A6A7D; } 
 #section0 #main_intro #two_section_wrap #intro_section2 #image_show { position: relative; overflow: hidden; margin: 110px 0; width: 760px; height: 760px; } 
 #section0 #main_intro #two_section_wrap #intro_section2 #image_show::after { position: absolute; display: block; content: ""; top: 0; left: -50px; width: 860px; height: 100%; box-shadow: inset 0px 0px 10px 20px #eff1f6; } 
-#section0 #main_intro #two_section_wrap #intro_section2 #phone { position: absolute; top: 170px; left: 62px; z-index: 3; filter: drop-shadow( 0px 5px 5px rgba(0, 0, 0, 0.499)); } 
+#section0 #main_intro #two_section_wrap #intro_section2 #phone { position: absolute; top: 220px; left: 90px; z-index: 3; filter: drop-shadow( 0px 5px 5px rgba(0, 0, 0, 0.499)); } 
 #section0 #main_intro #two_section_wrap #intro_section2 #image_show .tri_images { position: absolute; line-height: 0%; } 
 #section0 #main_intro #two_section_wrap #intro_section2 #image_show .tri_images ul .random_image { width: 253px; height: 253px; display: inline-block; float: left; } 
 #section0 #main_intro #two_section_wrap #intro_section2 #image_show .tri_images ul .random_image img { width: 253px; height: 253px; } 
@@ -55,7 +56,8 @@ header #top_button img { width: 4.8vh; }
 #draw_n_memory_section img:nth-child(6) { position: absolute; bottom: 96px; left: calc(54% - 378px); z-index: 2; } 
 #draw_n_memory_section img:nth-child(7) { position: absolute; top: 200px; right: calc(57% - 823px); z-index: 2; } 
 #draw_n_memory_section #draw_n_memory_text1 { position: absolute; top: 400px; left: calc(41.7% - 600px); } 
-#draw_n_memory_section #draw_n_memory_text2 { position: absolute; top: 475px; left: calc(41.7% - 600px); } 
+#draw_n_memory_section #draw_n_memory_text2 { position: absolute; top: 475px; left: calc(41.7% - 600px); }
+#draw_n_memory_section video{position: absolute; top: 200px; right: calc(57% - 823px); z-index: 3;}
 
 #trade_section { position: relative; max-width: 1920px; min-width: 1440px; height: 1800px; margin: 400px auto 0 auto; } 
 #trade_section img:first-child { position: absolute; bottom: 0; left: 380px; } 
