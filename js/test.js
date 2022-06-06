@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $('ul#tabs li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul#tabs li').removeClass('current');
+        $('.tab_content').removeClass('current');
+        setTimeout(function(){
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        },400);
+    });
+});

@@ -67,3 +67,17 @@ dt4.addEventListener("mouseout", function(){
     dd4.style.opacity = "0";
     hoverImg4.style.opacity = "0";
 })
+$(document).ready(function(){
+    $('ul.tabs li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab_content').removeClass('current');
+        setTimeout(function(){
+            $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+        },300);
+        
+    });
+
+});
