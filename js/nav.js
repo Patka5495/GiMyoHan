@@ -3,11 +3,11 @@ document.getElementById("nav_intro").onclick = function(){
     console.log(scrollY);
 }
 document.getElementById("nav_service").onclick = function(){
-    window.scrollTo({ top: 4800, behavior: "smooth" });
+    window.scrollTo({ top: 5000, behavior: "smooth" });
     console.log(scrollY);
 }
 document.getElementById("nav_design").onclick = function(){
-    window.scrollTo({ top: 12900, behavior: "smooth" });
+    window.scrollTo({ top: 13000, behavior: "smooth" });
     console.log(scrollY);
 }
 document.getElementById("nav_team").onclick = function(){

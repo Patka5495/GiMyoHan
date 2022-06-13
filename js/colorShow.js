@@ -29,6 +29,6 @@ var colorMove = function(){
     document.querySelector("#color_code2").style.opacity = "1";
     document.querySelector("#color_code3").style.opacity = "1";
 }
-document.getElementById("color_tab").onclick = function(){
+document.getElementById("tab_link4").onclick = function(){
     setTimeout(colorMove,500);
 }

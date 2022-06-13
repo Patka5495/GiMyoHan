@@ -19,4 +19,5 @@ window.addEventListener('scroll', () => {
 });
 topButton.onclick = function(){
     window.scrollTo({ top: 0, behavior: "smooth" });
+    console.log("click");
 } 
